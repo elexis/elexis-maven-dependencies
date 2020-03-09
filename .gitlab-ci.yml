@@ -8,6 +8,6 @@ build:
         - maven
     script:
         - mvn clean p2:site
-        - cd target && zip repository.zip repository/
+        - cd target && zip -r repository.zip repository/
         - curl -X DELETE -u $DEPLOY_USER:$DEPLOY_PASSWORD https://download.medelexis.ch/public/$CI_COMMIT_REF_NAME/p2/elexis-maven-dependencies/
         - curl -u $DEPLOY_USER:$DEPLOY_PASSWORD -T repository.zip https://download.medelexis.ch/public/$CI_COMMIT_REF_NAME/p2/elexis-maven-dependencies/repository.zip
