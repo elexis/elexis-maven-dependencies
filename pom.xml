@@ -40,6 +40,25 @@
                                         </artifact>
                                     </artifacts>
                                 </feature>
+                                <feature>
+                                    <id>org.seleniumhq.selenium.feature</id>
+                                    <version>3.141.59</version>
+                                    <providerName>org.seleniumhq</providerName>
+                                    <generateSourceFeature>true</generateSourceFeature>
+                                    <artifacts>
+                                        <artifact>
+                                            <id>org.seleniumhq.selenium:selenium-chrome-driver:3.141.59</id>
+                                            <transitive>true</transitive>
+                                            <source>true</source>
+                                        </artifact>
+                                        <artifact>
+                                            <id>org.seleniumhq.selenium:htmlunit-driver:2.38.0</id>
+                                            <transitive>true</transitive>
+                                            <source>true</source>
+                                        </artifact>
+                                    </artifacts>
+                                </feature>
+
                             </featureDefinitions>
                         </configuration>
 
